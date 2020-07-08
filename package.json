@@ -1,0 +1,38 @@
+{
+	"name": "eufy-robovac",
+	"version": "1.4.0",
+	"description": "NodeJS library to control Eufy RoboVac",
+	"main": "dist/index.js",
+	"types": "dist/index.d.js",
+	"scripts": {
+		"build": "rimraf ./dist && tsc",
+		"prepublishOnly": "npm run build",
+		"demo": "node demo.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/joshstrange/eufy-robovac.git"
+	},
+	"keywords": [
+		"eufy",
+		"robovac",
+		"15c",
+		"tuya"
+	],
+	"author": "Josh Strange",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/joshstrange/eufy-robovac/issues"
+	},
+	"homepage": "https://github.com/joshstrange/eufy-robovac#readme",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"tuyapi": "^5.3.1"
+	},
+	"devDependencies": {
+		"@types/node": "^12.0.2",
+		"rimraf": "^3.0.2",
+		"ts-node": "^8.10.2",
+		"typescript": "^3.4.5"
+	}
+}
